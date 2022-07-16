@@ -1,5 +1,8 @@
 // using this keyword to assign values to variables and uses new keyword to create a child
-function circle(radius){
+
+// First letter of constructor function should be UPPERCASE
+
+function Circle(radius){
     this.raduis = radius;
     this.draw = function(){
         console.log("draw circle with radius : " + radius);
