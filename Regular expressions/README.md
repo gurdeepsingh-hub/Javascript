@@ -1,3 +1,4 @@
+
 # Regular Expression
 Regular expression are Pattrens which provides a way to search and replace in text
 
@@ -22,7 +23,7 @@ it's totally optional but they can affects the search. There are 6 types of flag
 1. i : With this search is case-insenstive.(A=a)
 2. g : With this search look for all matches. without it search only returns first.
 3. m : Multiline mode.
-4. s : enables dotall mode, that allows a dot `.` to match new line character. [character class](doc: Character class)
+4. s : enables dotall mode, that allows a dot `.` to match new line character.[Character class](#character-class)
 5. u : enables full unicode support.
 6. y : Searching at the exact position in the text.
 
@@ -30,3 +31,13 @@ it's totally optional but they can affects the search. There are 6 types of flag
 `str.match(regexp)`, `str.replace(regexp,replacement)`, `regexp.test(str)` returns `ture/false`
 
 ## Character class
+we have a phone number like "+7(903)-123-45-67", and we need to turn it into pure numbers: 79031234567.
+
+**Digit class : `/\d/`   or for inverse `/\D/`**
+**Space class : `/\s/`   or for inverse `/\S/`**
+**Word class : `/\w/`  or for inverse `/\w/`**<br/>
+**Unicode class : `/\p{}/u`**
+
+
+
+
