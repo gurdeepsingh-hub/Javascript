@@ -20,23 +20,23 @@ let regexp = new RegExp(`<${tag}>`);
 ## Flags
 it's totally optional but they can affects the search. There are 6 types of flages in Javascript:
 
-1. i : With this search is case-insenstive.(A=a)
-2. g : With this search look for all matches. without it search only returns first.
-3. m : Multiline mode.
-4. s : enables dotall mode, that allows a dot `.` to match new line character.[Character class](#character-class)
-5. u : enables full unicode support.
-6. y : Searching at the exact position in the text.
+1. i : With this search is case-insenstive.(A=a)<br/>
+2. g : With this search look for all matches. without it search only returns first.<br/>
+3. m : Multiline mode.<br/>
+4. s : enables dotall mode, that allows a dot `.` to match new line character.[Character class](#character-class)<br/>
+5. u : enables full unicode support.<br/>
+6. y : Searching at the exact position in the text.<br/>
 
 ## Methods
-`str.match(regexp)`, `str.replace(regexp,replacement)`, `regexp.test(str)` returns `ture/false`
+`str.match(regexp)`, `str.replace(regexp,replacement)`, `regexp.test(str)` returns `ture/false`<br/>
 
 ## Character class
-we have a phone number like "+7(903)-123-45-67", and we need to turn it into pure numbers: 79031234567.
+we have a phone number like "+7(903)-123-45-67", and we need to turn it into pure numbers: 79031234567.<br/>
 
-**Digit class : `/\d/`   or for inverse `/\D/`**
-**Space class : `/\s/`   or for inverse `/\S/`**
+**Digit class : `/\d/`   or for inverse `/\D/`**<br/>
+**Space class : `/\s/`   or for inverse `/\S/`**<br/>
 **Word class : `/\w/`  or for inverse `/\w/`**<br/>
-**Unicode class : `/\p{}/u`**
+**Unicode class : `/\p{}/u`**<br/>
 
 
 
