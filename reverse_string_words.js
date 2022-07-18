@@ -4,14 +4,15 @@ function wordReverse (str) {
     let reverseString ='';
     for(let i=0;i<str.length;i++){
 
-        if(str.charAt(i) == /a-z/i )
+        if(isLetter(str.charAt(i)) )
         {
             stack.push(str.charAt(i));
-        }else if(str.charAt(i) != /a-z/i ){
+        }else if(str.charAt(i) != /[a-z]/i ){
+      
             while(stack.length > 0){
                 reverseString += stack.pop();
             }
-            reverseString += " ";
+            reverseString += str.charAt(i);
         }
     }
     while(stack.length > 0){
@@ -19,6 +20,8 @@ function wordReverse (str) {
     }
     return reverseString;
 }
-
+function isLetter(str) {
+    return str.length === 1 && str.match(/[a-z]/i);
+  }
 
     console.log(wordReverse("hellO guyS!!!"));
